@@ -1,0 +1,12 @@
+- Chinese Poker Class
+: Base.
+
+-Deck Class
+: Setup Deck & shuffle.
+
+-Card class:
+: Setup card hierachy & rules.
+
+-Game Class (MAIN)
+: Distrbute Cards & intialize the game.
+
