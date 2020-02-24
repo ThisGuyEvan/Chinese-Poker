@@ -12,11 +12,11 @@ public class Deck extends Chinese_Poker{
     this.deckNum = deckNum;
   }
 
-
+  //Sets deck
   public void createDecks(){
     while (true){
       if (deckNum > 0){
-        System.out.println("Successfully updated deck value.");
+        System.out.println("Successfully updated deck value!");
         break;
       }
       else{
@@ -41,7 +41,6 @@ public class Deck extends Chinese_Poker{
     }
 
     //Adding Jokers to the end since there are only two per deck.
-    System.out.println("passed");
     for (int w = 0; w < deckNum; w++){
       for (int z = 0; z < 2; z++){
         deckOfCards[0][count] = 14;
@@ -76,15 +75,6 @@ public class Deck extends Chinese_Poker{
       }
     }
 
-  }
-
-  //Checking the values of individual cards and their suits.
-  public String checkValues(){
-    String build = "";
-    for (int i = 0; i < deck[0].length; i++){
-      build += (i + 1) + ") " + deck[0][i] + ": " + deck[1][i] + ". \n";
-    }
-    return build;
   }
 
   //Setters & getters.

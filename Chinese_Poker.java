@@ -6,7 +6,7 @@ public class Chinese_Poker{
   private String[] playerNames;
 
   Chinese_Poker(){
-    this.playerNum = 0;
+    
   }
   
   //Setters.
@@ -14,11 +14,11 @@ public class Chinese_Poker{
   public void setPlayerNum(){
     Scanner console = new Scanner(System.in);
     System.out.print("How many players? ");
-    playerNum = console.nextInt();
+    this.playerNum = console.nextInt();
     while (true){ //Tests whether there are 1 or more players.
       if (playerNum < 2){
         System.out.print("\nYou cannot play Chinese poker by yourself...that's just sad.\n\tEnter number of players: ");
-        playerNum = console.nextInt();
+        this.playerNum = console.nextInt();
       }
       else{
         System.out.println("Successfully updated the count of players!");
@@ -43,7 +43,7 @@ public class Chinese_Poker{
 
   //Getters.
   public int getPlayerNum(){
-    return playerNum;
+    return this.playerNum;
   }
 
   public String getPlayerNames(){
@@ -56,7 +56,9 @@ public class Chinese_Poker{
   }
 
   //Utilized for other sub classes.
-  public String[] getArrayofNames(){
+  public String[] getArrayOfNames(){
     return playerNames;
   }
+
+
 }
